@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - Building
-  - Buildings
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BuildingDetail
-    uniqueID: 1907460841
+  - name: Ground
+    uniqueID: 3301760297
     locked: 0
   - name: Buildings
     uniqueID: 3399615577
+    locked: 0
+  - name: BuildingDetail
+    uniqueID: 1907460841
+    locked: 0
+  - name: Pipes
+    uniqueID: 3017210281
     locked: 0
