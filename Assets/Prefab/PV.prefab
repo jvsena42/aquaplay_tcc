@@ -97,5 +97,5 @@ MonoBehaviour:
   diameter: 100
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 0
+  flowRate: 9.6
   previousPipe: {fileID: 0}

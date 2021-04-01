@@ -12,7 +12,7 @@ public class Pipe : MonoBehaviour
     [SerializeField] float diameter = 100.0f;
     [SerializeField] float upstreamEnergy = 0.0f;
     [SerializeField] float downstreamEnergy = 0.0f;
-    [SerializeField] float flowRate = 100.0f;
+    [SerializeField] float flowRate = 9.6f;
 
     [SerializeField] Pipe previousPipe;
 

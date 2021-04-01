@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 100
-  upstreamEnergy: 100
+  upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 100
+  flowRate: 9.6
   previousPipe: {fileID: 0}
