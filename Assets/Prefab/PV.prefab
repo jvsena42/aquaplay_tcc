@@ -94,8 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951e84524bd075f459fed405a169336d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diameter: 100
+  diameter: 0.1
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 9.6
+  flowRate: 0
   previousPipe: {fileID: 0}
+  nextPipes: []
