@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Stage0Malhada.unity
+    guid: e5e1e7fd8f273334a83307bbfefdace3
   m_configObjects: {}
