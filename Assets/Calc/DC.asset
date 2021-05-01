@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 0.125
   length: 1000
-  preassureLoss: 0
+  preassureLoss: 10
   flowRate: 1.2848948e-10
   positiveDirection: 1
