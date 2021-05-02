@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
     Vector3 touchStart;
     public float zommOutMin = 1;
-    public float zommOutMax = 8;
+    public float zommOutMax = 30;
 
     void Start()
     {
