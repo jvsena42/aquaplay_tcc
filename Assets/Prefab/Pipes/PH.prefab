@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4572700095198384531}
   - component: {fileID: 8119692271328369495}
-  - component: {fileID: 2149778107476193507}
   m_Layer: 0
   m_Name: PH
   m_TagString: Untagged
@@ -69,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1277757015
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 01efc033377c66c489ed585be3a61349, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -82,21 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2149778107476193507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2730991142050629436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951e84524bd075f459fed405a169336d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diameter: 0.1
-  upstreamEnergy: 0
-  downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []

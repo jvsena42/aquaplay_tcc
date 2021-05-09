@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Stage0Malhada.unity
     guid: e5e1e7fd8f273334a83307bbfefdace3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 20808b1bd155d3d488241349f67e2f46
+  - enabled: 1
+    path: Assets/Scenes/SelectStage.unity
+    guid: b557b4cc3a09c2549bc47004b6414b8b
   - enabled: 1
     path: Assets/Scenes/Stage1.unity
     guid: 83b2a0953357ee5449929e55a03d1ce4

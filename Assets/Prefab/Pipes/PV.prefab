@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1503358372550692296}
   - component: {fileID: 1503358372550692311}
-  - component: {fileID: 1503358372550692310}
   m_Layer: 0
   m_Name: PV
   m_TagString: Untagged
@@ -82,21 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1503358372550692310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503358372550692309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951e84524bd075f459fed405a169336d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diameter: 0.1
-  upstreamEnergy: 0
-  downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
