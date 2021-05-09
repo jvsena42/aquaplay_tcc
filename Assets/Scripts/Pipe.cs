@@ -8,9 +8,10 @@ public class Pipe : MonoBehaviour
 {
     //Static parametes
     private float roughness = 0.0015f; //Hazen williams
-    private float length = 5; //m
+    
 
     //Dinamic parameteres
+    [SerializeField] float length = 5; //m
     [SerializeField] float diameter = 0.1f; //m
     [SerializeField] float upstreamEnergy = 0.0f;
     [SerializeField] float downstreamEnergy = 0.0f;
