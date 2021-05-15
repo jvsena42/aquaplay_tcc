@@ -13760,7 +13760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   length: 45
   diameter: 0.1
-  upstreamEnergy: 0
+  upstreamEnergy: 200000
   downstreamEnergy: 0
   flowRate: 0
   previousPipe: {fileID: 0}

@@ -38,7 +38,10 @@ public class Pipe : MonoBehaviour
     private void UpdateTextPreassure()
     {
         if(textPreassure != null){
-            textPreassure.SetText(downstreamEnergy.ToString() + "Kpa");
+            float mcaPreassure = downstreamEnergy/9.806f;
+            mcaPreassure = (float) Math.Round(mcaPreassure, 2);
+
+            textPreassure.SetText(mcaPreassure.ToString() + " mca");
         }
     }
 
