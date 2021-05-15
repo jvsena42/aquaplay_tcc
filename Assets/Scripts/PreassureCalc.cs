@@ -17,6 +17,7 @@ public class PreassureCalc : MonoBehaviour
             float roughness = pipes[i].GetRoughnesst();
             float diameter = pipes[i].GetDiameter();
             float upstreamEnergy = 0f;
+            float downStreamEnergy = 0f;
 
             //Pegar a energia do tubo anterior
             if (i > 0)
@@ -29,7 +30,14 @@ public class PreassureCalc : MonoBehaviour
                 upstreamEnergy = pipes[i].GetUpStreamEnergy();
             }
             float pressureLoss = CalcPreassureLoss(flowRate, length, roughness, diameter);
-            pipes[i].SetDownStreamEnergy(upstreamEnergy - pressureLoss);
+            downStreamEnergy = upstreamEnergy - pressureLoss;
+            
+            if(downStreamEnergy>0){
+                pipes[i].SetDownStreamEnergy(downStreamEnergy);
+            }else{
+                pipes[i].SetDownStreamEnergy(0f);
+            }
+            
         }
     }
 

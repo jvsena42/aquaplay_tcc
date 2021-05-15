@@ -32,6 +32,7 @@ public class Pipe : MonoBehaviour
     {
        UpdateTextPreassure();
        UpdateFlowRate();
+       UpdatePreassureColor();
     }
 
     private void UpdateTextPreassure()
@@ -39,6 +40,22 @@ public class Pipe : MonoBehaviour
         if(textPreassure != null){
             textPreassure.SetText(downstreamEnergy.ToString() + "Kpa");
         }
+    }
+
+    private void UpdatePreassureColor(){
+
+        if(textPreassure!= null){
+            float minPreassure = 100f;
+
+            if(downstreamEnergy<minPreassure){
+                //Vermelho
+                textPreassure.color = new Color32(218, 26, 26, 255);
+            }else{
+                //Azul
+                textPreassure.color = new Color32(38, 183, 183, 255);
+            }
+        }
+        
     }
 
 

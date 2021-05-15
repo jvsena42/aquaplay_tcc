@@ -1285,10 +1285,22 @@ MonoBehaviour:
   diameter: 0.1
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
+  flowRate: 0.74
+  previousPipe: {fileID: 233289453}
   nextPipes: []
   textPreassure: {fileID: 0}
+--- !u!114 &112259416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6322766946496535979, guid: a82ed1b3a7263bc41a22ef0c75a4d221,
+    type: 3}
+  m_PrefabInstance: {fileID: 941593451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &115457955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3154,8 +3166,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1143576189}
+  nextPipes:
+  - {fileID: 98955354}
   textPreassure: {fileID: 0}
 --- !u!1001 &244426960
 PrefabInstance:
@@ -4968,8 +4981,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 896217520}
+  nextPipes:
+  - {fileID: 939661674}
   textPreassure: {fileID: 0}
 --- !u!1001 &341863598
 PrefabInstance:
@@ -7029,6 +7043,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 437052844}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &454671042 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6322766946496535979, guid: a82ed1b3a7263bc41a22ef0c75a4d221,
+    type: 3}
+  m_PrefabInstance: {fileID: 715926816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &468377502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7444,8 +7470,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1540820301}
+  nextPipes:
+  - {fileID: 1981261453}
   textPreassure: {fileID: 0}
 --- !u!1001 &481141448
 PrefabInstance:
@@ -9086,8 +9113,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 755972116}
+  nextPipes:
+  - {fileID: 1694644998}
   textPreassure: {fileID: 0}
 --- !u!1001 &574658951
 PrefabInstance:
@@ -10129,7 +10157,7 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
+  previousPipe: {fileID: 939661674}
   nextPipes: []
   textPreassure: {fileID: 0}
 --- !u!1001 &616334546
@@ -11923,8 +11951,10 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1869947036}
+  nextPipes:
+  - {fileID: 1540820301}
+  - {fileID: 573132504}
   textPreassure: {fileID: 0}
 --- !u!1001 &758690489
 PrefabInstance:
@@ -12184,8 +12214,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1273294367}
+  nextPipes:
+  - {fileID: 1196074182}
   textPreassure: {fileID: 0}
 --- !u!1001 &760623509
 PrefabInstance:
@@ -12622,10 +12653,10 @@ MonoBehaviour:
   diameter: 0.1
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
+  flowRate: 0.74
+  previousPipe: {fileID: 1334479856}
   nextPipes: []
-  textPreassure: {fileID: 0}
+  textPreassure: {fileID: 1513802367}
 --- !u!1001 &790490772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13221,10 +13252,10 @@ MonoBehaviour:
   diameter: 0.1
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
+  flowRate: 0.74
+  previousPipe: {fileID: 1056604086}
   nextPipes: []
-  textPreassure: {fileID: 0}
+  textPreassure: {fileID: 454671042}
 --- !u!1001 &816321729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14235,8 +14266,10 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 340168849}
+  nextPipes:
+  - {fileID: 611011292}
+  - {fileID: 1538509435}
   textPreassure: {fileID: 0}
 --- !u!1001 &941593451
 PrefabInstance:
@@ -15797,8 +15830,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1694644998}
+  nextPipes:
+  - {fileID: 815863459}
   textPreassure: {fileID: 0}
 --- !u!1001 &1057592092
 PrefabInstance:
@@ -25772,8 +25806,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 2137662726}
+  nextPipes:
+  - {fileID: 1191343845}
   textPreassure: {fileID: 0}
 --- !u!1001 &1143382056
 PrefabInstance:
@@ -25903,9 +25938,10 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
-  textPreassure: {fileID: 0}
+  previousPipe: {fileID: 1441131712}
+  nextPipes:
+  - {fileID: 233289453}
+  textPreassure: {fileID: 112259416}
 --- !u!1001 &1148934832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79756,7 +79792,7 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
+  previousPipe: {fileID: 1141504308}
   nextPipes: []
   textPreassure: {fileID: 0}
 --- !u!1001 &1191712074
@@ -80099,8 +80135,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 760403575}
+  nextPipes:
+  - {fileID: 2095560498}
   textPreassure: {fileID: 0}
 --- !u!1001 &1203204538
 PrefabInstance:
@@ -81903,8 +81940,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1441131712}
+  nextPipes:
+  - {fileID: 760403575}
   textPreassure: {fileID: 0}
 --- !u!1001 &1275419679
 PrefabInstance:
@@ -83296,8 +83334,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 2042732412}
+  nextPipes:
+  - {fileID: 790307678}
   textPreassure: {fileID: 0}
 --- !u!1001 &1347320780
 PrefabInstance:
@@ -84504,6 +84543,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1420677673}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1423580065 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6322766946496535979, guid: a82ed1b3a7263bc41a22ef0c75a4d221,
+    type: 3}
+  m_PrefabInstance: {fileID: 54818876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1436669782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84640,8 +84691,10 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1538509435}
+  nextPipes:
+  - {fileID: 1143576189}
+  - {fileID: 1273294367}
   textPreassure: {fileID: 0}
 --- !u!1001 &1446771852
 PrefabInstance:
@@ -91441,6 +91494,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1510894886}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513802367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6322766946496535979, guid: a82ed1b3a7263bc41a22ef0c75a4d221,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112710119}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1518289137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91875,8 +91940,10 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 939661674}
+  nextPipes:
+  - {fileID: 2042732412}
+  - {fileID: 1441131712}
   textPreassure: {fileID: 0}
 --- !u!1001 &1540061469
 PrefabInstance:
@@ -92006,8 +92073,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 755972116}
+  nextPipes:
+  - {fileID: 476454779}
   textPreassure: {fileID: 0}
 --- !u!1001 &1544249775
 PrefabInstance:
@@ -94573,7 +94641,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e620afd8cf71c5347a1adf01985829ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipes: []
+  pipes:
+  - {fileID: 896217520}
+  - {fileID: 1869947036}
+  - {fileID: 2137662726}
+  - {fileID: 1141504308}
+  - {fileID: 1191343845}
+  - {fileID: 755972116}
+  - {fileID: 1540820301}
+  - {fileID: 476454779}
+  - {fileID: 1981261453}
+  - {fileID: 573132504}
+  - {fileID: 1694644998}
+  - {fileID: 1056604086}
+  - {fileID: 815863459}
+  - {fileID: 340168849}
+  - {fileID: 939661674}
+  - {fileID: 611011292}
+  - {fileID: 1538509435}
+  - {fileID: 2042732412}
+  - {fileID: 1334479856}
+  - {fileID: 790307678}
+  - {fileID: 1441131712}
+  - {fileID: 1143576189}
+  - {fileID: 233289453}
+  - {fileID: 98955354}
+  - {fileID: 1273294367}
+  - {fileID: 760403575}
+  - {fileID: 1196074182}
+  - {fileID: 2095560498}
 --- !u!4 &1686138643
 Transform:
   m_ObjectHideFlags: 0
@@ -94721,8 +94817,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 573132504}
+  nextPipes:
+  - {fileID: 1056604086}
   textPreassure: {fileID: 0}
 --- !u!1001 &1702452981
 PrefabInstance:
@@ -96795,8 +96892,8 @@ MonoBehaviour:
   flowRate: 0
   previousPipe: {fileID: 896217520}
   nextPipes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2137662726}
+  - {fileID: 755972116}
   textPreassure: {fileID: 0}
 --- !u!1001 &1878505433
 PrefabInstance:
@@ -98859,10 +98956,10 @@ MonoBehaviour:
   diameter: 0.1
   upstreamEnergy: 0
   downstreamEnergy: 0
-  flowRate: 0
-  previousPipe: {fileID: 0}
+  flowRate: 0.74
+  previousPipe: {fileID: 476454779}
   nextPipes: []
-  textPreassure: {fileID: 0}
+  textPreassure: {fileID: 1423580065}
 --- !u!1001 &1981889051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99672,8 +99769,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1538509435}
+  nextPipes:
+  - {fileID: 1334479856}
   textPreassure: {fileID: 0}
 --- !u!1001 &2045493928
 PrefabInstance:
@@ -100585,7 +100683,7 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
+  previousPipe: {fileID: 1196074182}
   nextPipes: []
   textPreassure: {fileID: 0}
 --- !u!1001 &2098920505
@@ -101357,8 +101455,9 @@ MonoBehaviour:
   upstreamEnergy: 0
   downstreamEnergy: 0
   flowRate: 0
-  previousPipe: {fileID: 0}
-  nextPipes: []
+  previousPipe: {fileID: 1869947036}
+  nextPipes:
+  - {fileID: 1141504308}
   textPreassure: {fileID: 0}
 --- !u!1001 &2144262310
 PrefabInstance:
