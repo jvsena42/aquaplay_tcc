@@ -63,6 +63,7 @@ public class Pipe : MonoBehaviour
 
 
     public float GetDiameter(){return diameter;}
+    public void SetDiameter(float newDiameter){diameter = newDiameter;}
 
     public float GetUpStreamEnergy(){return upstreamEnergy;}
     public void SetUpStreamEnergy(float energy){upstreamEnergy = energy;}
