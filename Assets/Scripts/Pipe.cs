@@ -20,6 +20,7 @@ public class Pipe : MonoBehaviour
     [SerializeField] List<Pipe> nextPipes;
 
     [SerializeField] TextMeshProUGUI textPreassure;
+    [SerializeField] TextMeshProUGUI textDiameter;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class Pipe : MonoBehaviour
        UpdateTextPreassure();
        UpdateFlowRate();
        UpdatePreassureColor();
+       UpdateTextDiameter();
     }
 
     private void UpdateTextPreassure()
@@ -42,6 +44,15 @@ public class Pipe : MonoBehaviour
             mcaPreassure = (float) Math.Round(mcaPreassure, 2);
 
             textPreassure.SetText(mcaPreassure.ToString() + " mca");
+        }
+    }
+
+    private void UpdateTextDiameter()
+    {
+        if(textDiameter != null){
+            float diameterMilimeters = diameter*1000f;
+
+            textDiameter.SetText("Ø" + diameterMilimeters.ToString() + " mm");
         }
     }
 
