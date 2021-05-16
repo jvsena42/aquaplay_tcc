@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -8,8 +9,20 @@ public class CameraMovement : MonoBehaviour
     public float zommOutMin = 1;
     public float zommOutMax = 30;
 
+    //Tilemap
+    [SerializeField] Tilemap theMap;
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
+    private float halfHeight;
+    private float halfWidth;
+
     void Start()
     {
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
+
+        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth,halfHeight,0f);
+        topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth,-halfHeight,0f);
         
     }
 
@@ -17,6 +30,13 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         Pan();
+        LimitCamera();
+    }
+
+    private void LimitCamera(){
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x,bottomLeftLimit.x,topRightLimit.x),
+                                        Mathf.Clamp(transform.position.y,bottomLeftLimit.y,topRightLimit.y),
+                                                    transform.position.z);
     }
 
     private void Pan(){
