@@ -20,15 +20,23 @@ public class PreassureCalc : MonoBehaviour
             float downStreamEnergy = 0f;
 
             //Pegar a energia do tubo anterior
-            if (i > 0)
-            {
-                upstreamEnergy = pipes[i-1].GetDownStreamEnergy();
-                pipes[i].SetUpStreamEnergy(upstreamEnergy);
-            }
-            else
-            {
+            Pipe previousPipe = pipes[i].GetPreviousPipe();
+            if(previousPipe != null){
+                upstreamEnergy = previousPipe.GetDownStreamEnergy();
+                 pipes[i].SetUpStreamEnergy(upstreamEnergy);
+            }else{
                 upstreamEnergy = pipes[i].GetUpStreamEnergy();
             }
+
+            //if (i > 0)
+            //{
+            //    upstreamEnergy = pipes[i-1].GetDownStreamEnergy();
+            //    pipes[i].SetUpStreamEnergy(upstreamEnergy);
+            //}
+            //else
+            //{
+             //   upstreamEnergy = pipes[i].GetUpStreamEnergy();
+            //}
             float pressureLoss = CalcPreassureLoss(flowRate, length, roughness, diameter);
             downStreamEnergy = upstreamEnergy - pressureLoss;
             
@@ -44,6 +52,6 @@ public class PreassureCalc : MonoBehaviour
     private static float CalcPreassureLoss(float flowRate, float length, float roughness, float diameter)
     {
         //return (10.65f * Mathf.Pow(flowRate, 1.85f) * length) / (Mathf.Pow(roughness, 1.85f) * Mathf.Pow(diameter, 4.87f));
-        return (10.65f * 0.57289981433308f * length) / (Mathf.Pow(roughness, 1.85f) * Mathf.Pow(diameter, 4.87f));
+        return (10.65f * Mathf.Pow(flowRate, 1.85f) * length) / (Mathf.Pow(roughness, 1.85f) * Mathf.Pow(diameter, 4.87f));
     }
 }

@@ -60,7 +60,8 @@ public class Pipe : MonoBehaviour
     private void UpdatePreassureColor(){
 
         if(textPreassure!= null){
-            float minPreassure = 100f;
+            //Pressão min 10 mca = 98,06 kpa
+            float minPreassure = 98.06f;
 
             if(downstreamEnergy<minPreassure){
                 //Vermelho
@@ -87,7 +88,7 @@ public class Pipe : MonoBehaviour
         }
     }
 
-
+    public Pipe GetPreviousPipe(){return previousPipe;}
     public float GetDiameter(){return diameter;}
     public void SetDiameter(float newDiameter){diameter = newDiameter;}
 
