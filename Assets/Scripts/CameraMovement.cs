@@ -18,19 +18,23 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
+        UpdateBounds();
+    }
+
+    private void UpdateBounds()
+    {
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
 
-        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth,halfHeight,0f);
-        topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth,-halfHeight,0f);
-        
+        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
+        topRightLimit = theMap.localBounds.max - new Vector3(halfWidth, halfHeight, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Pan();
         LimitCamera();
+        Pan();
     }
 
     private void LimitCamera(){
@@ -67,5 +71,6 @@ public class CameraMovement : MonoBehaviour
 
     private void Zoom(float increment){
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment,zommOutMin,zommOutMax);
+        UpdateBounds();
     }
 }
