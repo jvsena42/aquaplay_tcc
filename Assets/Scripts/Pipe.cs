@@ -76,7 +76,7 @@ public class Pipe : MonoBehaviour
     private void verifyPreviousDiameter(){
         if(previousPipe != null && textDiameter != null){
 
-            //O diâmetro não pode aumentar, apenas diminuir
+            //O diâmetro não pode aumentar ao longo do trecho
             if(previousPipe.diameter < diameter){
                 //Vermelho
                 textDiameter.color = new Color32(218, 26, 26, 255);
