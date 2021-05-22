@@ -7,6 +7,7 @@ public class PreassureCalc : MonoBehaviour
 {
 
 [SerializeField] List<Pipe> pipes;
+[SerializeField] List<Pipe> pipesVerifyPreassure;
 public GameObject successScreem;
 public GameObject failureScreem;
 
@@ -65,7 +66,7 @@ public GameObject failureScreem;
     private List<float> GetListPreassures(){
         List<float> preassures = new List<float>();
         
-        foreach(Pipe pipe in pipes){
+        foreach(Pipe pipe in pipesVerifyPreassure){
             preassures.Add(pipe.GetDownStreamEnergy());
         }
 

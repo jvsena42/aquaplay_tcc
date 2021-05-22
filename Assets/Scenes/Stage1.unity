@@ -102195,6 +102195,13 @@ MonoBehaviour:
   - {fileID: 760403575}
   - {fileID: 1196074182}
   - {fileID: 2095560498}
+  pipesVerifyPreassure:
+  - {fileID: 1981261453}
+  - {fileID: 815863459}
+  - {fileID: 790307678}
+  - {fileID: 1143576189}
+  successScreem: {fileID: 1769638513}
+  failureScreem: {fileID: 1380701890}
 --- !u!4 &1686138643
 Transform:
   m_ObjectHideFlags: 0
