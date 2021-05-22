@@ -9,40 +9,45 @@ public class PreassureCalc : MonoBehaviour
 [SerializeField] List<Pipe> pipes;
 [SerializeField] List<Pipe> pipesVerifyPreassure;
 public GameObject successScreem;
-public GameObject failureScreem;
+public GameObject failurePreassureScreem;
+public GameObject failureDiameterScreem;
 
     public void Calc(){
 
-        for(int i =0;i<pipes.Count;i++)
-        {
+        if(verifyPreviousDiameter()){
+                for(int i =0;i<pipes.Count;i++)
+            {
 
-            float flowRate = pipes[i].GetFlowRate();
-            float length = pipes[i].GetLenght();
-            float roughness = pipes[i].GetRoughnesst();
-            float diameter = pipes[i].GetDiameter();
-            float upstreamEnergy = 0f;
-            float downStreamEnergy = 0f;
+                float flowRate = pipes[i].GetFlowRate();
+                float length = pipes[i].GetLenght();
+                float roughness = pipes[i].GetRoughnesst();
+                float diameter = pipes[i].GetDiameter();
+                float upstreamEnergy = 0f;
+                float downStreamEnergy = 0f;
 
-            //Pegar a energia do tubo anterior
-            Pipe previousPipe = pipes[i].GetPreviousPipe();
-            if(previousPipe != null){
-                upstreamEnergy = previousPipe.GetDownStreamEnergy();
-                 pipes[i].SetUpStreamEnergy(upstreamEnergy);
-            }else{
-                upstreamEnergy = pipes[i].GetUpStreamEnergy();
+                //Pegar a energia do tubo anterior
+                Pipe previousPipe = pipes[i].GetPreviousPipe();
+                if(previousPipe != null){
+                    upstreamEnergy = previousPipe.GetDownStreamEnergy();
+                    pipes[i].SetUpStreamEnergy(upstreamEnergy);
+                }else{
+                    upstreamEnergy = pipes[i].GetUpStreamEnergy();
+                }
+
+                float pressureLoss = CalcPreassureLoss(flowRate, length, roughness, diameter);
+                downStreamEnergy = upstreamEnergy - pressureLoss;
+                
+                if(downStreamEnergy>0){
+                    pipes[i].SetDownStreamEnergy(downStreamEnergy);
+                }else{
+                    pipes[i].SetDownStreamEnergy(0f);
+                }
+                
             }
-
-            float pressureLoss = CalcPreassureLoss(flowRate, length, roughness, diameter);
-            downStreamEnergy = upstreamEnergy - pressureLoss;
-            
-            if(downStreamEnergy>0){
-                pipes[i].SetDownStreamEnergy(downStreamEnergy);
-            }else{
-                pipes[i].SetDownStreamEnergy(0f);
-            }
-            
+            VerifyMinPreassure();
+        }else{
+            showScreen(failureDiameterScreem);
         }
-        VerifyMinPreassure();
     }
 
     private static float CalcPreassureLoss(float flowRate, float length, float roughness, float diameter)
@@ -56,7 +61,7 @@ public GameObject failureScreem;
         List<float> filteredList = GetListPreassures().Where(x => x < minPreassure).ToList();
 
         if(filteredList.Count>0){
-            showScreen(failureScreem);
+            showScreen(failurePreassureScreem);
         }else{
             showScreen(successScreem);
         }
@@ -71,6 +76,21 @@ public GameObject failureScreem;
         }
 
         return preassures;
+    }
+
+     private bool verifyPreviousDiameter(){
+         foreach(Pipe pipe in pipes){
+            if(pipe.GetPreviousPipe() != null){
+
+                float diameter = pipe.GetDiameter();
+                float previousDiameter = pipe.GetPreviousPipe().GetDiameter();
+
+                if(previousDiameter < diameter){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
      public void showScreen(GameObject screen){
