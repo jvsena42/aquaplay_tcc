@@ -678,14 +678,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7410232717087762808}
-        m_MethodName: LoadNextScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: SelectStage
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1675235779
@@ -1085,6 +1085,36 @@ PrefabInstance:
       propertyPath: m_Colors.m_NormalColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7410232717087762808}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002319196632045127, guid: 7129d5efe2548b047a13cf5890f22f8d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8002319196632045128, guid: 7129d5efe2548b047a13cf5890f22f8d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1168,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 8002319196632045128, guid: 7129d5efe2548b047a13cf5890f22f8d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -108.1
+      value: -108.1001
       objectReference: {fileID: 0}
     - target: {fileID: 8002319196632045128, guid: 7129d5efe2548b047a13cf5890f22f8d,
         type: 3}
