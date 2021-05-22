@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PreassureCalc : MonoBehaviour
 {
 
 [SerializeField] List<Pipe> pipes;
+public GameObject successScreem;
+public GameObject failureScreem;
 
     public void Calc(){
 
@@ -28,15 +31,6 @@ public class PreassureCalc : MonoBehaviour
                 upstreamEnergy = pipes[i].GetUpStreamEnergy();
             }
 
-            //if (i > 0)
-            //{
-            //    upstreamEnergy = pipes[i-1].GetDownStreamEnergy();
-            //    pipes[i].SetUpStreamEnergy(upstreamEnergy);
-            //}
-            //else
-            //{
-             //   upstreamEnergy = pipes[i].GetUpStreamEnergy();
-            //}
             float pressureLoss = CalcPreassureLoss(flowRate, length, roughness, diameter);
             downStreamEnergy = upstreamEnergy - pressureLoss;
             
@@ -47,11 +41,42 @@ public class PreassureCalc : MonoBehaviour
             }
             
         }
+        VerifyMinPreassure();
     }
 
     private static float CalcPreassureLoss(float flowRate, float length, float roughness, float diameter)
     {
-        //return (10.65f * Mathf.Pow(flowRate, 1.85f) * length) / (Mathf.Pow(roughness, 1.85f) * Mathf.Pow(diameter, 4.87f));
         return (10.65f * Mathf.Pow(flowRate, 1.85f) * length) / (Mathf.Pow(roughness, 1.85f) * Mathf.Pow(diameter, 4.87f));
+    }
+
+    private void VerifyMinPreassure(){
+        float minPreassure = 98.06f;
+
+        List<float> filteredList = GetListPreassures().Where(x => x < minPreassure).ToList();
+
+        if(filteredList.Count>0){
+            showScreen(failureScreem);
+        }else{
+            showScreen(successScreem);
+        }
+
+    }
+
+    private List<float> GetListPreassures(){
+        List<float> preassures = new List<float>();
+        
+        foreach(Pipe pipe in pipes){
+            preassures.Add(pipe.GetDownStreamEnergy());
+        }
+
+        return preassures;
+    }
+
+     public void showScreen(GameObject screen){
+        screen.gameObject.SetActive(true);
+    }
+
+    public void hideScreen(GameObject screen){
+        screen.gameObject.SetActive(false);
     }
 }
