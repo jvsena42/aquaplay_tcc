@@ -20593,7 +20593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951e84524bd075f459fed405a169336d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 45
+  length: 60
   diameter: 0.1
   upstreamEnergy: 1000
   downstreamEnergy: 0
@@ -106543,8 +106543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   length: 45
   diameter: 1
-  upstreamEnergy: 1000
-  downstreamEnergy: 1000
+  upstreamEnergy: 300
+  downstreamEnergy: 300
   flowRate: 0
   previousPipe: {fileID: 0}
   nextPipes: []
