@@ -14,7 +14,6 @@ public GameObject failureDiameterScreem;
 
     public void Calc(){
 
-        if(verifyPreviousDiameter()){
                 for(int i =0;i<pipes.Count;i++)
             {
 
@@ -45,9 +44,7 @@ public GameObject failureDiameterScreem;
                 
             }
             VerifyMinPreassure();
-        }else{
-            showScreen(failureDiameterScreem);
-        }
+        
     }
 
     private static float CalcPreassureLoss(float flowRate, float length, float roughness, float diameter)

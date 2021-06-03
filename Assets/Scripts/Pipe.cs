@@ -31,11 +31,11 @@ public class Pipe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       UpdateTextDiameter();
        UpdateTextPreassure();
        UpdateFlowRate();
        UpdatePreassureColor();
-       UpdateTextDiameter();
-       verifyPreviousDiameter();
+      // verifyPreviousDiameter();
     }
 
     private void UpdateTextPreassure()
