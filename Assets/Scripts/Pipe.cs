@@ -7,12 +7,12 @@ using TMPro;
 public class Pipe : MonoBehaviour
 {
     //Static parametes
-    private float roughness = 130f; //Hazen williams pvc usado +20anos
+    private float roughness = 150f; //Hazen williams pvc usado +20anos
     
 
     //Dinamic parameteres
     [SerializeField] float length = 5; //m
-    [SerializeField] float diameter = 0.1f; //m
+    [SerializeField] float diameter = 0.05f; //m
     [SerializeField] float upstreamEnergy = 0.0f;
     [SerializeField] float downstreamEnergy = 0.0f;
     [SerializeField] float flowRate = 0.0f; //m³/s
