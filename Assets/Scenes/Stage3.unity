@@ -5299,7 +5299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 1}
+  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 0.92156863}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -94897,7 +94897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 1}
+  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 0.92156863}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -95279,7 +95279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 1}
+  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 0.92156863}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -108391,7 +108391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 1}
+  m_Color: {r: 0.36078432, g: 0.38431373, b: 0.47058824, a: 0.92156863}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -119285,6 +119285,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3066113700602948316, guid: e76139d92cebd734b81a93c094d31fa3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
+      objectReference: {fileID: 0}
     - target: {fileID: 3091135663827337623, guid: e76139d92cebd734b81a93c094d31fa3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -119410,6 +119415,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8151427957491820115, guid: e76139d92cebd734b81a93c094d31fa3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
+      objectReference: {fileID: 0}
     - target: {fileID: 8151427958700804181, guid: e76139d92cebd734b81a93c094d31fa3,
         type: 3}
       propertyPath: m_Name
@@ -119524,6 +119534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427958921411609, guid: e76139d92cebd734b81a93c094d31fa3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e76139d92cebd734b81a93c094d31fa3, type: 3}
