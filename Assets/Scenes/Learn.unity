@@ -649,7 +649,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "A rugosidade dos tubos faz com que a \xE1gua perca energia ao longo
-        do percuso. Chamamos isso de perda de carga"
+        do percurso. Chamamos isso de perda de carga"
       objectReference: {fileID: 0}
     - target: {fileID: 8743001677691705692, guid: 80ff26bcc9c829840ae606e9469a75cc,
         type: 3}
@@ -4380,6 +4380,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825137493585630047, guid: 80ff26bcc9c829840ae606e9469a75cc,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC9 a quantidade de \xE1gua que passa por uma se\xE7\xE3o do tubo
+        em um intervalo de tempo"
       objectReference: {fileID: 0}
     - target: {fileID: 8743001677874032912, guid: 80ff26bcc9c829840ae606e9469a75cc,
         type: 3}
